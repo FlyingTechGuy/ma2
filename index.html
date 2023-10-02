@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link rel="shortcut icon" type="image/png" href="media/favicon.svg">
+    <script src="https://kit.fontawesome.com/ceab6117ab.js" crossorigin="anonymous"></script>
+	<title>Mavic Air 2 -  Up Your Game - DJI</title>
+</head>
+<body>
+    <p id="cords">cords</p>
+    <section class="sect1">
+        <img src="media/DjiBg.jpg" id="bghome"></img>
+        <div class="hometxtContainner">
+            <p id="titlehome">MAVIC <span class="airtitle">AIR</span> 2</p>
+            <p id="subtitlehome">Up Your Game</p>
+        </div>
+        <img src="media/Dji2nd.png" id="mounthome"></img>
+        <button class="whatchvidBtn">Watch Video <i class="fa-regular fa-circle-play"></i></button>
+    </section>
+    <section class="sect2">
+        <div class="openvidCont">
+            <video width="1000" height="auto" webkit-playsinline="true" playsinline="true" id="openvid" muted>
+                <source src="media/openvid.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="gridStartCont">
+            <div class="gridStartSubcont">
+                <div class="gridStart">
+                    <div class="square1">
+                        <img src="media/cameraIcon.svg" alt="icon" class="square1Icon">
+                        <p class="square1Title">Ultra-Clear Details</p>
+                        <p class="square1Info">- 1/2-Inch Image Sensor<br>- 4K/60fps Video<br>- 48MP Photo</p>
+                    </div>
+                </div>
+                <div class="gridStart">
+                    <div class="square1">
+                        <img src="media/10kmIcon.svg" alt="icon" class="square1Icon">
+                        <p class="square1Title">Fly Farther, See Clearer</p>
+                        <p class="square1Info">- OcuSync 2.0 10km 1080p/30fps Video Transmission</p>
+                    </div>
+                </div>
+                <div class="gridStart">
+                    <div class="square1">
+                        <img src="media/34minIcon.svg" alt="icon" class="square1Icon">
+                        <p class="square1Title">Fly Longer</p>
+                        <p class="square1Info">- 34-Min Max Flight Time<br>- 240-Min Max RC Battery Life</p>
+                    </div>
+                </div>
+                <div class="gridStart">
+                    <div class="square1">
+                        <img src="media/focustracIcon.svg" alt="icon" class="square1Icon">
+                        <p class="square1Title">Fly Smarter and Safer</p>
+                        <p class="square1Info">- APAS 3.0 Obstacle Avoidance<br>- FocusTrack</p>
+                    </div>
+                </div>
+                <div class="gridStart">
+                    <div class="square1">
+                        <img src="media/hdrIcon.svg" alt="icon" class="square1Icon">
+                        <p class="square1Title">Enhanced HDR</p>
+                        <p class="square1Info">- Photo<br>- Video<br>- Panorama</p>
+                    </div>
+                </div>
+                <div class="gridStart">
+                    <div class="square1">
+                        <img src="media/8kHyperIcon.svg" alt="icon" class="square1Icon">
+                        <p class="square1Title">Cinematic Content</p>
+                        <p class="square1Info">- 8K Hyperlapse<br>- QuickShots</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sect3">
+        <div class="sect3txtCont">
+            <p class="sect3title">Image Quality</p>
+            <p class="sect3subtitle">Next-Level Content</p>
+        </div>
+        <!-- https://dji-official-fe.djicdn.com/assets/uploads/v/e4a63e93ac6808fa853ce8b4d91f61ad.mp4 -->
+        <div class="qualityvidCont">
+            <div class="qualityvidSubcont">
+                <video width="1000" height="auto" id="qualityvid" muted loop autoplay>
+                    <source src="media/qualityVid.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="blackqualityvid"></div>
+                <div class="barCont1">
+                    <div class="rightBar1"></div>
+                    <div class="leftBar1"></div>
+                    <div class="topBar1"></div>
+                    <div class="bottomBar1"></div>
+                </div>
+            </div>
+        </div>
+        <div class="sect3onblackscroll">
+            <div class="sect3onblackscroll1">
+                <p class="sect3onblackscroll1txt"><span style="font-size: 0.7em;">4K/60fps Video</span><br>Epic is Easy</p>
+            </div>
+            <div class="sect3onblackscroll2">
+                <p class="sect3onblackscroll2txt">With a 1/2-inch CMOS sensor, <span style="color: #fff;">Mavic Air 2 captures<br>impressive 48MP photos.</span> Get ready to take your aerial<br>content to the next level.</p>
+            </div>
+        </div>
+    </section>
+    <section class="sect4">
+        <div class="sect4textCont">
+            <div class="sect4textRow">
+                <p class="sect4title">HDR Video</p>
+                <p class="sect4subtitle">Dynamic by Default</p>
+            </div>
+            <p class="sect4textinfo">The secret to incredible HDR video is a high-performance <span style="color: #000000d9;">Quad Bayer image sensor</span>. A single frame separates exposure levels in different areas, accurately capturing light and dark details. The images are layered to create a colorful, balanced, and eye-catching picture with <span style="color: #000000d9;">higher dynamic range.</span></p>
+        </div>
+        <div class="sect4vidCont">
+            <video width="1000" height="auto" id="hdrvid" muted>
+                <source src="media/hdrVid.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <i class="fa-solid fa-arrow-rotate-right" id="hdrRestartBtn" style="display: none;" onclick="restartVid('hdrvid','hdrRestartBtn')"></i>
+        </div>
+    </section>
+    <section class="sect5">
+        <div class="sect5cont1">
+            <div class="sect5imgstartcont">
+                <div class="blackmpvid"></div>
+                <img src="media/48MPstart.jpeg" alt="" id="sect5imgstartback">
+                <img src="media/48MPstart.jpeg" alt="" id="sect5imgstart">
+            </div>
+            <div class="sect5onblackscroll">
+                <div class="sect5onblackscroll1">
+                    <p class="sect5onblackscroll1txt"><span style="font-size: 0.7em;">48MP Photos</span><br>All in the Details</p>
+                </div>
+                <div class="sect5onblackscroll2">
+                    <p class="sect5onblackscroll2txt">With a <span style="color: #fff;">1/2-inch CMOS sensor</span>, Mavic Air 2 captures<br>impressive 48MP photos. Get ready to take your aerial<br>content to the next level.</p>
+                </div>
+            </div>
+        </div>
+        <div class="sect5cont2">
+            <img class="sect5cont2img" src="media/48MPend.jpeg" alt="">
+            <p class="sect5cont2txt">The 48MP camera supports a high megapixel count that allows for vivid details even when you zoom in on an image.</p>
+        </div>
+    </section>
+    <section class="sect6">
+        <div class="sect6textCont">
+            <div class="sect6textRow">
+                <p class="sect6title">SmartPhoto</p>
+                <p class="sect6subtitle">Optimized Capture</p>
+            </div>
+            <p class="sect6textinfo">Mavic Air 2 features SmartPhoto, which integrates scene recognition, HyperLight, and HDR into one mode for optimal results. <span style="color: #000000d9;">Scene recognition optimizes different camera parameters for various scenes and supports intelligent recognition</span> of five categories: sunset, skies, grass, snow, and trees.</p>
+        </div>
+        <div class="sect6vidCont">
+            <div class="slider1">
+                <video width="1000" height="auto" class="smartphotobg" id="smartphoto0" muted>
+                    <source src="media/blackvid.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video src="media/smartphoto1.mp4" type="video/mp4" width="1000" height="auto" class="smartphoto active" id="smartphoto1" muted>
+                    Your browser does not support the video tag.
+                </video>
+                <video src="media/smartphoto2.mp4" type="video/mp4" width="1000" height="auto" class="smartphoto" id="smartphoto2" muted>
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+        <div class="lable-cont">
+            <div class="lable-menu1">
+                <div class="menu-item1 active">Strong Lighting Conditions</div>
+                <div class="menu-item1">Weak Lighting Conditions</div>
+                <div class="highlight-line1"></div>
+                <div class="highlight-line-rail1"></div>
+            </div>
+        </div>
+        <div class="sect6infoCont">
+            <div class="sect6infoTxtCont">
+                <p class="sect6infoTxt active">In strong lighting conditions, HDR significantly improves the dynamic range, adjusting exposure parameters and layering shots for more vibrant, high-quality photos.</p>
+                <p class="sect6infoTxt">HyperLight optimizes photos taken in low-light conditions, resulting in less noise and enhanced clarity.</p>
+            </div>
+        </div>
+    </section>
+    <section class="sect7">
+        <div class="sect7textCont">
+            <div class="sect7textRow">
+                <p class="sect7title">HDR Panorama</p>
+                <p class="sect7subtitle">See the Whole Picture</p>
+            </div>
+            <p class="sect7textinfo">Mavic Air 2 offers DJI's most advanced panorama mode, with a higher dynamic range and colors that are vivid and incredibly accurate.</p>
+        </div>
+        <div class="sect7imgCont">
+            <img src="media/pano180.JPG" alt="pano" class="sect7img">
+        </div>
+        <iframe width="90%" height="500px" allowFullScreen="true" allow="accelerometer; magnetometer; gyroscope" style="display:block; margin:20px auto; border:0 none; max-width:880px;border-radius:8px;" src="https://panoraven.com/en/embed/Mz1eu3Hfug"></iframe>
+    </section>
+    <section class="sect8">
+        <div class="sect8txtCont">
+            <p class="sect8title">Image Quality</p>
+            <p class="sect8subtitle">Next-Level Content</p>
+        </div>
+        <!-- https://dji-official-fe.djicdn.com/assets/uploads/v/e4a63e93ac6808fa853ce8b4d91f61ad.mp4 -->
+        <div class="quickshotsvidCont">
+            <div class="quickshotsvidSubcont">
+                <video width="1000" height="auto" id="quickshotsvid" muted loop autoplay>
+                    <source src="media/quickshotVid.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="blackquickshotsvid"></div>
+                <div class="barCont2">
+                    <div class="rightBar2"></div>
+                    <div class="leftBar2"></div>
+                    <div class="topBar2"></div>
+                    <div class="bottomBar2"></div>
+                </div>
+            </div>
+        </div>
+        <div class="sect8onblackscroll">
+            <div class="sect8onblackscroll1">
+                <p class="sect8onblackscroll1txt">Mavic Air 2 combines a powerful camera with intelligent<br>shooting modes for stunning results. <span style="color: #fff;">Creative aerial<br>photography has never been this easy.</span></p>
+            </div>
+        </div>
+    </section>
+    <section class="sect9">
+        <div class="sect9textCont">
+            <div class="sect9textRow">
+                <p class="sect9title">FocusTrack</p>
+                <p class="sect9subtitle">Master the Skies</p>
+            </div>
+            <p class="sect9textinfo">Professional-quality footage is effortless thanks to FocusTrack. <span style="color: #000000d9;">This easy-to-use suite of intelligent tracking modes includes Active Track 3.0, Spotlight 2.0, and Point of Interest 3.0</span>, allowing you to unleash your creativity.</p>
+        </div>
+        <div class="sect9vidCont">
+            <div class="slider2">
+                <video width="1000" height="auto" class="trackingbg" id="tracking0" muted>
+                    <source src="media/blackvid(16:9).mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video src="media/spotlightVid.mp4" type="video/mp4" width="1000" height="auto" class="tracking active" id="tracking1" muted>
+                    Your browser does not support the video tag.
+                </video>
+                <video src="media/activetrack2Vid.mp4" type="video/mp4" width="1000" height="auto" class="tracking" id="tracking2" muted>
+                    Your browser does not support the video tag.
+                </video>
+                <video src="media/poiVid.mp4" type="video/mp4" width="1000" height="auto" class="tracking" id="tracking3" muted>
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+        <div class="lable-cont">
+            <div class="lable-menu2">
+                <div class="menu-item2 active">Spotlight 2.0</div>
+                <div class="menu-item2">ActiveTrack 3.0</div>
+                <div class="menu-item2">POI 3.0</div>
+                <div class="highlight-line2"></div>
+                <div class="highlight-line-rail2"></div>
+            </div>
+        </div>
+        <div class="sect9infoCont">
+            <div class="sect9infoTxtCont">
+                <p class="sect9infoTxt active">Fly freely while the camera remains locked on the subject with this convenient mode. Simply select your subject and fly.</p>
+                <p class="sect9infoTxt">Following subjects while avoiding obstacles is smoother than ever with the latest version of DJI’s ActiveTrack technology. With <b>better pathfinding and a faster and more accurate prediction of lost subjects</b>, this technology keeps your subject in the center of the frame, even if they move behind a tree.</p>
+                <p class="sect9infoTxt">POI 3.0 improves the capabilities of POI 2.0, especially the recognition of flat surfaces. Where POI 2.0 might lose the target while tracking, this improved feature does not. POI 3.0 is now also able to dynamically track objects like people, cars, and boats.</p>
+            </div>
+        </div>
+    </section>
+    <section class="sect10">
+        <div class="sect10textCont">
+            <div class="sect10textRow">
+                <p class="sect10title">8K Hyperlapse</p>
+                <p class="sect10subtitle">Time and Movement</p>
+            </div>
+            <p class="sect10textinfo">Mavic Air 2 supports Hyperlapse in 8K, allowing you <span style="color: #000000d9;">to warp time and space for especially stunning footage</span>. Best of all, you can achieve this shot without complex post-processing. Choose from Free, Circle, Course Lock, and Waypoint modes, select the shooting location, and the DJI Fly app will do the rest.</p>
+        </div>
+        <div class="sect10vidCont">
+            <div class="slider3">
+                <video width="1000" height="auto" class="hyperlapsebg" id="hyperlapse0" muted>
+                    <source src="media/blackvid(16:9).mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video src="media/hlCourcelock.mp4" type="video/mp4" width="1000" height="auto" class="hyperlapse active" id="hyperlapse1" muted>
+                    Your browser does not support the video tag.
+                </video>
+                <video src="media/hlFree.mp4" type="video/mp4" width="1000" height="auto" class="hyperlapse" id="hyperlapse2" muted>
+                    Your browser does not support the video tag.
+                </video>
+                <video src="media/waypoint.mp4" type="video/mp4" width="1000" height="auto" class="hyperlapse" id="hyperlapse3" muted>
+                    Your browser does not support the video tag.
+                </video>
+                <video src="media/hlCircle.mp4" type="video/mp4" width="1000" height="auto" class="hyperlapse" id="hyperlapse4" muted>
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+        <div class="lable-cont">
+            <div class="lable-menu3">
+                <div class="menu-item3 active">Course Lock</div>
+                <div class="menu-item3">Free</div>
+                <div class="menu-item3">Waypoint</div>
+                <div class="menu-item3">Circle</div>
+                <div class="highlight-line3"></div>
+                <div class="highlight-line-rail3"></div>
+            </div>
+        </div>
+    </section>
+    <section class="sect11">
+        <div class="sect11textCont">
+            <div class="sect11textRow">
+                <p class="sect11title">QuickShots</p>
+                <p class="sect11subtitle">Imagination Simplified</p>
+            </div>
+            <p class="sect11textinfo">Capture cinematic video clips automatically with QuickShots. <span style="color: #000000d9;">With just a few taps, Mavic Air 2 plans and flies a complicated aerial route for a professional-quality shot</span>. Add music, effects, and filters with super-intuitive Story templates so you can share your masterpiece directly to social media.</p>
+        </div>
+        <div class="sect11vidCont">
+            <div class="slider4">
+                <video width="1000" height="auto" class="quickshotsbg" id="quickshots0" muted>
+                    <source src="media/blackvid(16:9).mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video src="media/courselock.MP4" type="video/mp4" width="1000" height="auto" class="quickshots active" id="quickshots1" muted>
+                    Your browser does not support the video tag.
+                </video>
+                <video src="media/free.MP4" type="video/mp4" width="1000" height="auto" class="quickshots" id="quickshots2" muted>
+                    Your browser does not support the video tag.
+                </video>
+                <video src="media/qsHelix.mp4" type="video/mp4" width="1000" height="auto" class="quickshots" id="quickshots3" muted>
+                    Your browser does not support the video tag.
+                </video>
+                <video src="media/circle.mp4" type="video/mp4" width="1000" height="auto" class="quickshots" id="quickshots4" muted>
+                    Your browser does not support the video tag.
+                </video>
+                <video src="media/circle.mp4" type="video/mp4" width="1000" height="auto" class="quickshots" id="quickshots5" muted>
+                    Your browser does not support the video tag.
+                </video>
+                <video src="media/qsAstroid.mp4" type="video/mp4" width="1000" height="auto" class="quickshots" id="quickshots6" muted>
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+        <div class="lable-cont">
+            <div class="lable-menu4">
+                <div class="menu-item4 active">Dronie</div>
+                <div class="menu-item4">Circle</div>
+                <div class="menu-item4">Helix</div>
+                <div class="menu-item4">Rocket</div>
+                <div class="menu-item4">Boomerang</div>
+                <div class="menu-item4">Asteroid</div>
+                <div class="highlight-line4"></div>
+                <div class="highlight-line-rail4"></div>
+            </div>
+        </div>
+    </section>
+    <section class="sect12">
+        <div class="sect12txtCont">
+            <p class="sect12title">Flight and Safety</p>
+            <p class="sect12subtitle">Safer Flight for<br>Stunning Content</p>
+        </div>
+        <div class="OcuSync2p0vidCont">
+            <div class="OcuSync2p0vidSubcont">
+                <video width="1000" height="auto" id="OcuSync2p0vid" muted loop autoplay>
+                    <source src="media/OcuSync2p0Vid.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="blackOcuSync2p0vid"></div>
+                <div class="barCont3">
+                    <div class="rightBar3"></div>
+                    <div class="leftBar3"></div>
+                    <div class="topBar3"></div>
+                    <div class="bottomBar3"></div>
+                </div>
+            </div>
+        </div>
+        <div class="sect12onblackscroll">
+            <div class="sect12onblackscroll1">
+                <p class="sect12onblackscroll1txt"><span style="font-size: 0.7em;">OcuSync 2.0</span><br>The Sky's the Limit</p>
+            </div>
+        </div>
+        <div class="OcuSync2p0screenVidCont">
+            <video width="1000" height="auto" id="OcuSync2p0screenVid" muted loop autoplay>
+                <source src="media/OcuSync2p0ScreenVid.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="OcuSync2p0infoCont">
+                <p class="OcuSync2p0info">OcuSync 2.0 has a video transmission distance of up to 10 km and can also <span style="color: #000000d9;">deliver 1080p FHD resolution livestream</span> directly from the drone's camera. Enjoy more freedom for exploring and more clarity for that perfect shot.</p>
+            </div>
+        </div>
+    </section>
+    <!-- script link -->
+    <script src="app.js"></script>
+</body>
+</html>
