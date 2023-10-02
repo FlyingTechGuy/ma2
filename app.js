@@ -522,8 +522,8 @@ document.addEventListener("DOMContentLoaded", function() {
 window.addEventListener('scroll', function(){
 
     // -=- cords -=-
-    const cords = document.getElementById("cords");
-    cords.innerHTML = this.scrollY;
+    // const cords = document.getElementById("cords");
+    // cords.innerHTML = this.scrollY;
     
     // -=- section one move on scroll -=-
     const bghome = document.getElementById("bghome");
