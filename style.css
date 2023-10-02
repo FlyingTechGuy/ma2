@@ -45,6 +45,7 @@ body {
     font-size: 2.5em;
     color: #fff;
     -webkit-text-stroke: 1px #000;
+    display: none;
 }
 
 .sect1 {
@@ -1465,6 +1466,7 @@ body {
 
 #OcuSync2p0screenVid {
     margin-bottom: 20px;
+    max-width: 90%;
 }
 
 .OcuSync2p0infoCont {
