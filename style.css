@@ -261,7 +261,7 @@ body {
 .qualityvidSubcont {
     position: sticky;
     top: 0;
-    height: 963px;
+    /* height: 963px; */
 }
 
 #qualityvid {
@@ -280,6 +280,7 @@ body {
     background-color: #000;
     opacity: 0;
     transition: 1.5s;
+    z-index: 1;
 }
 
 .barCont1 {
@@ -686,7 +687,7 @@ body {
 }
 
 .lable-cont {
-    position: relative;
+    position: static;
     width: 100vw;
     height: auto;
     display: flex;
@@ -917,7 +918,7 @@ body {
 .quickshotsvidCont {
     position: relative;
     width: 100%;
-    height: 1350px;
+    height: 1200px;
     margin-top: -100px;
     background-color: #000;
 }
@@ -925,7 +926,7 @@ body {
 .quickshotsvidSubcont {
     position: sticky;
     top: 0;
-    height: 963px;
+    /* height: 963px; */
 }
 
 #quickshotsvid {
@@ -944,6 +945,7 @@ body {
     background-color: #000;
     opacity: 0;
     transition: 1.5s;
+    z-index: 1;
 }
 
 .barCont2 {
@@ -1568,7 +1570,7 @@ body {
 .OcuSync2p0vidCont {
     position: relative;
     width: 100%;
-    height: 1300px;
+    height: 1100px;
     margin-top: -100px;
     background-color: #000;
 }
@@ -1576,7 +1578,7 @@ body {
 .OcuSync2p0vidSubcont {
     position: sticky;
     top: 0;
-    height: 963px;
+    /* height: 963px; */
 }
 
 #OcuSync2p0vid {
@@ -1595,6 +1597,7 @@ body {
     background-color: #000;
     opacity: 0;
     transition: 1.5s;
+    z-index: 1;
 }
 
 .barCont3 {
@@ -1678,6 +1681,7 @@ body {
 #OcuSync2p0screenVid {
     margin-bottom: 20px;
     max-width: 90%;
+    pointer-events: none;
 }
 
 .OcuSync2p0infoCont {
@@ -1692,4 +1696,10 @@ body {
     letter-spacing: -.03em;
     margin-top: 8px;
     color: #00000073;
+}
+
+@media screen and (max-width: 1180px) {
+    .OcuSync2p0infoCont {
+        width: 90vw;
+    }
 }
