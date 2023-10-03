@@ -19,11 +19,11 @@
 html {
 	scroll-behavior: smooth;
     user-select: none;
-    overflow-x: hidden;
-	}
+}
 
 body {
     font-family: "titleReg"; /*sans-serif*/
+    overflow-x: hidden;
     /* min-height: 1000vh; */
 	}
 	
@@ -338,7 +338,7 @@ body {
 
 .sect3onblackscroll1 {
     position: absolute;
-    top: 630px;
+    top: 60vh; /*630px*/
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -351,7 +351,7 @@ body {
 
 .sect3onblackscroll2 {
     position: absolute;
-    top: 1330px;
+    top: 130vh; /*1330px*/
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -538,7 +538,7 @@ body {
 
 .sect5onblackscroll1 {
     position: absolute;
-    top: 630px;
+    top: 60vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -551,7 +551,7 @@ body {
 
 .sect5onblackscroll2 {
     position: absolute;
-    top: 1330px;
+    top: 130vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -594,6 +594,16 @@ body {
     width: 42%;
     height: auto;
     margin-bottom: 50px;
+}
+
+@media screen and (max-width: 1180px) {
+    .sect5cont2img {
+        width: 90%;
+    }
+    
+    .sect5cont2txt {
+        width: 90%;
+    }
 }
 
 .sect6 {
@@ -682,19 +692,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow-x: scroll;
-}
-
-.lable-cont::-webkit-scrollbar {
-  display: none;
 }
 
 .lable-menu1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 0;
-    margin: 0 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     width: 420px;
 }
 
@@ -996,7 +1001,7 @@ body {
 
 .sect8onblackscroll1 {
     position: absolute;
-    top: 630px;
+    top: 60vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -1192,12 +1197,12 @@ body {
 
 @media screen and (max-width: 600px) {
     .lable-menu2 {
-        width: 320px;
+        width: 260px;
         font-size: 12px;
     }
 
     .highlight-line-rail2 {
-        width: 320px;
+        width: 260px;
     }
 }
 
@@ -1354,12 +1359,12 @@ body {
 
 @media screen and (max-width: 600px) {
     .lable-menu3 {
-        width: 320px;
+        width: 280px;
         font-size: 12px;
     }
 
     .highlight-line-rail3 {
-        width: 320px;
+        width: 280px;
     }
 }
 
@@ -1648,7 +1653,7 @@ body {
 
 .sect12onblackscroll1 {
     position: absolute;
-    top: 630px;
+    top: 60vh;
     width: 100%;
     display: flex;
     flex-direction: column;
