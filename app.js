@@ -51,6 +51,7 @@ const bottomBar3 = document.querySelector(".bottomBar3");
 const barCont3 = document.querySelector(".barCont3");
 const sect12txtCont = document.querySelector(".sect12txtCont");
 const sect12onblackscroll1 = document.querySelector(".sect12onblackscroll1");
+const signal = document.querySelectorAll(".signal");
 
 qualityvid.addEventListener("loadedmetadata", function() {
   // Set the height of the container to match the video's height
@@ -517,6 +518,104 @@ document.addEventListener("DOMContentLoaded", function() {
             updateHighlightLine4();
         }
     });
+
+    // --------------------------
+
+    const menuItems5 = document.querySelectorAll(".menu-item5");
+    const highlightLine5 = document.querySelector(".highlight-line5");
+    let currentIndex5 = 0;
+
+    // Initialize the line under the first menu item\
+    setTimeout(() => {
+        updateHighlightLine5();
+    }, 100);
+
+    // Function to update the line position
+    function updateHighlightLine5() {
+        const menuItem5 = menuItems5[currentIndex5];
+        const menuItem5Rect = menuItem5.getBoundingClientRect();
+        highlightLine5.style.width = menuItem5Rect.width + "px";
+        highlightLine5.style.transform = `translateX(${menuItem5Rect.left}px)`;
+        console.log(currentIndex5); // <--
+    }
+    
+    // Event listener for menu item clicks
+    menuItems5.forEach((menuItem5, index) => {
+        menuItem5.addEventListener("click", () => {
+            currentIndex5 = index;
+            for (i = 0; i < menuItems5.length; i++) {
+                menuItems5[i].classList.remove("active");
+            }
+            menuItems5[currentIndex5].classList.add("active");
+            for (i = 0; i < signal.length; i++) {
+                signal[i].classList.remove("active");
+            }
+            signal[currentIndex5].classList.add("active");
+            updateHighlightLine5();
+        });
+    });
+
+    function slider5Interval() {
+        if (currentIndex5 == 0) {
+            currentIndex5++;
+        }
+        else {
+            currentIndex5 = 0;
+        }
+        for (i = 0; i < menuItems5.length; i++) {
+            menuItems5[i].classList.remove("active");
+        }
+        menuItems5[currentIndex5].classList.add("active");
+        for (i = 0; i < signal.length; i++) {
+            signal[i].classList.remove("active");
+        }
+        signal[currentIndex5].classList.add("active");
+        updateHighlightLine5();
+    }
+
+    setInterval(slider5Interval, 5000);
+
+    /*signal[0].addEventListener("timeupdate", function() {
+        if (signal[currentIndex5].ended) {
+            currentIndex5++;
+            for (i = 0; i < menuItems5.length; i++) {
+                menuItems5[i].classList.remove("active");
+            }
+            menuItems5[currentIndex5].classList.add("active");
+            for (i = 0; i < signal.length; i++) {
+                signal[i].classList.remove("active");
+            }
+            signal[currentIndex5].classList.add("active");
+            for (i = 0; i < sect9infoTxt.length; i++) {
+                sect9infoTxt[i].classList.remove("active");
+            }
+            sect9infoTxt[currentIndex5].classList.add("active");
+            signal[currentIndex5].currentTime = 0;
+            signal[currentIndex5].play();
+            updateHighlightLine5();
+        }
+    });
+    
+    signal[1].addEventListener("timeupdate", function() {
+        if (signal[currentIndex5].ended) {
+            currentIndex5 = 0;
+            for (i = 0; i < menuItems5.length; i++) {
+                menuItems5[i].classList.remove("active");
+            }
+            menuItems5[currentIndex5].classList.add("active");
+            for (i = 0; i < signal.length; i++) {
+                signal[i].classList.remove("active");
+            }
+            signal[currentIndex5].classList.add("active");
+            for (i = 0; i < sect9infoTxt.length; i++) {
+                sect9infoTxt[i].classList.remove("active");
+            }
+            sect9infoTxt[currentIndex5].classList.add("active");
+            signal[currentIndex5].currentTime = 0;
+            signal[currentIndex5].play();
+            updateHighlightLine5();
+        }
+    });*/
 });
 
 window.addEventListener('scroll', function(){
@@ -768,11 +867,12 @@ window.addEventListener('scroll', function(){
     }
 })
 
-function restartVid(x, y) {
+function restartVid(x, y, z) {
     const xVid = document.getElementById(x);
     const yRestartBtn = document.getElementById(y);
     xVid.play();
     yRestartBtn.style.display = "none";
-    boolscroll3 = true;
+    if (z == 3) {
+        boolscroll3 = true;
+    }
 }
-

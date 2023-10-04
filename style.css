@@ -25,6 +25,7 @@ body {
     font-family: "titleReg"; /*sans-serif*/
     overflow-x: hidden;
     /* min-height: 1000vh; */
+    background-color: #fff;
 	}
 	
 * {
@@ -187,6 +188,7 @@ body {
     width: 250px;
     height: auto;
     text-align: center;
+    line-height: 1.25;
     margin: 10px;
 }
 
@@ -255,7 +257,7 @@ body {
     width: 100%;
     height: 2005px;
     margin-top: -100px;
-    background-color: #000;
+    background-color: #fff;
 }
 
 .qualityvidSubcont {
@@ -287,6 +289,7 @@ body {
     position: absolute;
     top: 0;
     width: 100%;
+    z-index: 2;
 }
 
 .rightBar1 {
@@ -918,9 +921,9 @@ body {
 .quickshotsvidCont {
     position: relative;
     width: 100%;
-    height: 1200px;
+    height: 1300px;
     margin-top: -100px;
-    background-color: #000;
+    background-color: #fff;
 }
 
 .quickshotsvidSubcont {
@@ -952,6 +955,7 @@ body {
     position: absolute;
     top: 0;
     width: 100%;
+    z-index: 2;
 }
 
 .rightBar2 {
@@ -1013,6 +1017,12 @@ body {
     transition: 0.5s;
     font-size: 1.5em;
     color: #ffffffa6;
+}
+
+@media screen and (max-width: 1180px) {
+    .quickshotsvidCont {
+        height: 1200px;
+    }
 }
 
 .sect9 {
@@ -1570,9 +1580,9 @@ body {
 .OcuSync2p0vidCont {
     position: relative;
     width: 100%;
-    height: 1100px;
+    height: 1200px;
     margin-top: -100px;
-    background-color: #000;
+    background-color: #fff;
 }
 
 .OcuSync2p0vidSubcont {
@@ -1604,6 +1614,7 @@ body {
     position: absolute;
     top: 0;
     width: 100%;
+    z-index: 2;
 }
 
 .rightBar3 {
@@ -1699,7 +1710,173 @@ body {
 }
 
 @media screen and (max-width: 1180px) {
+    .OcuSync2p0vidCont {
+        height: 1100px;
+    }
+
     .OcuSync2p0infoCont {
         width: 90vw;
+    }
+}
+
+.sect13 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.sect13textCont {
+    width: auto;
+    font-family: "titleBold";
+    margin-bottom: 25px;
+}
+
+.sect13textSubcont {
+    display: flex;
+    width: 960px;
+    height: auto;
+}
+
+.sect13textRow {
+    width: 468px;
+    height: auto;
+}
+
+.sect13title {
+    color: #000000a6;
+    font-size: 28px;
+    width: 90%;
+    margin-bottom: 10px;
+    margin-right:10px;
+}
+
+.sect13subtitle {
+    color: #000000d9;
+    font-size: 40px;
+    width: 90%;
+}
+
+.sect13textinfo {
+    color: #00000073;
+    font-size: 22px;
+    width: 468px;
+    height: auto;
+}
+
+.sect13vidCont {
+    width: 67%;
+    max-width: 1140px;
+}
+
+.slider5 {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.signalbg {
+    position: relative;
+    width: 100%;
+    height: auto;
+    pointer-events: none;
+    border-radius: 10px;
+    z-index: -1;
+    opacity: 0;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.signal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    pointer-events: none;
+    border-radius: 10px;
+    opacity: 0;
+    transition: 0.4s;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.signal.active {
+    opacity: 1;
+}
+
+.lable-menu5 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 150px;
+}
+
+.menu-item5 {
+    color: #00000073;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    position: relative;
+    transition: 0.4s;
+}
+
+.menu-item5:hover {
+    color: #000;
+}
+
+.menu-item5.active {
+    color: #000;
+}
+
+.highlight-line5 {
+    height: 2px;
+    background-color: #000;
+    position: absolute;
+    margin-bottom: -40px;
+    z-index: 2;
+    left: 0;
+    width: 0;
+    transition: width 0.3s ease, transform 0.3s ease; /* Added transition properties */
+}
+
+.highlight-line-rail5 {
+    height: 1px;
+    background-color: #d8d8d8;
+    position: absolute;
+    margin-bottom: -41px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+}
+
+@media screen and (max-width: 1180px) {
+    .sect13textSubcont {
+        flex-direction: column;
+        width: 65vw;
+    }
+    
+    .sect13textRow {
+        width: 90%;
+    }
+    
+    .sect13subtitle {
+        width: auto;
+        margin-bottom: 20px;
+    }
+
+    .sect13textinfo {
+        width: 100%;
+    }
+
+    .sect13vidCont {
+        width: 90%;
     }
 }
