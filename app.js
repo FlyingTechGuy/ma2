@@ -12,6 +12,7 @@ let boolscroll7 = true; // - tracking video (7)
 let boolscroll8 = true; // - hyperlapse video (8)
 let boolscroll9 = true; // - quickshots video (9)
 let boolscroll10 = true; // - barriers OcuSync2p0 video (10)
+let boolscroll11 = true; // - apas drone video (11)
 
 const qualityvid = document.getElementById("qualityvid");
 const rightBar1 = document.querySelector(".rightBar1");
@@ -52,6 +53,8 @@ const barCont3 = document.querySelector(".barCont3");
 const sect12txtCont = document.querySelector(".sect12txtCont");
 const sect12onblackscroll1 = document.querySelector(".sect12onblackscroll1");
 const signal = document.querySelectorAll(".signal");
+const obstacle = document.querySelectorAll(".obstacle");
+const sect15infoTxt = document.querySelectorAll(".sect15infoTxt");
 
 qualityvid.addEventListener("loadedmetadata", function() {
   // Set the height of the container to match the video's height
@@ -99,7 +102,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const menuItem1Rect = menuItem1.getBoundingClientRect();
         highlightLine1.style.width = menuItem1Rect.width + "px";
         highlightLine1.style.transform = `translateX(${menuItem1Rect.left}px)`;
-        console.log(currentIndex1); // <--
+        //console.log(currentIndex1); // <--
     }
     
     // Event listener for menu item clicks
@@ -185,7 +188,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const menuItem2Rect = menuItem2.getBoundingClientRect();
         highlightLine2.style.width = menuItem2Rect.width + "px";
         highlightLine2.style.transform = `translateX(${menuItem2Rect.left}px)`;
-        console.log(currentIndex2); // <--
+        //console.log(currentIndex2); // <--
     }
     
     // Event listener for menu item clicks
@@ -290,7 +293,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const menuItem3Rect = menuItem3.getBoundingClientRect();
         highlightLine3.style.width = menuItem3Rect.width + "px";
         highlightLine3.style.transform = `translateX(${menuItem3Rect.left}px)`;
-        console.log(currentIndex3); // <--
+        //console.log(currentIndex3); // <--
     }
     
     // Event listener for menu item clicks
@@ -396,7 +399,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const menuItem4Rect = menuItem4.getBoundingClientRect();
         highlightLine4.style.width = menuItem4Rect.width + "px";
         highlightLine4.style.transform = `translateX(${menuItem4Rect.left}px)`;
-        console.log(currentIndex4); // <--
+        //console.log(currentIndex4); // <--
     }
     
     // Event listener for menu item clicks
@@ -536,7 +539,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const menuItem5Rect = menuItem5.getBoundingClientRect();
         highlightLine5.style.width = menuItem5Rect.width + "px";
         highlightLine5.style.transform = `translateX(${menuItem5Rect.left}px)`;
-        console.log(currentIndex5); // <--
+        //console.log(currentIndex5); // <--
     }
     
     // Event listener for menu item clicks
@@ -575,47 +578,72 @@ document.addEventListener("DOMContentLoaded", function() {
 
     setInterval(slider5Interval, 5000);
 
-    /*signal[0].addEventListener("timeupdate", function() {
-        if (signal[currentIndex5].ended) {
-            currentIndex5++;
-            for (i = 0; i < menuItems5.length; i++) {
-                menuItems5[i].classList.remove("active");
+    // --------------------------
+    
+    const menuItems6 = document.querySelectorAll(".menu-item6");
+    const highlightLine6 = document.querySelector(".highlight-line6");
+    let currentIndex6 = 0;
+    
+    // Initialize the line under the first menu item\
+    setTimeout(() => {
+        updateHighlightLine6();
+    }, 100);
+    
+    // Function to update the line position
+    function updateHighlightLine6() {
+        const menuItem6 = menuItems6[currentIndex6];
+        const menuItem6Rect = menuItem6.getBoundingClientRect();
+        highlightLine6.style.width = menuItem6Rect.width + "px";
+        highlightLine6.style.transform = `translateX(${menuItem6Rect.left}px)`;
+        //console.log(currentIndex6); // <--
+    }
+    
+    // Event listener for menu item clicks
+    menuItems6.forEach((menuItem6, index) => {
+        menuItem6.addEventListener("click", () => {
+            currentIndex6 = index;
+            for (i = 0; i < menuItems6.length; i++) {
+                menuItems6[i].classList.remove("active");
             }
-            menuItems5[currentIndex5].classList.add("active");
-            for (i = 0; i < signal.length; i++) {
-                signal[i].classList.remove("active");
+            menuItems6[currentIndex6].classList.add("active");
+            for (i = 0; i < obstacle.length; i++) {
+                obstacle[i].classList.remove("active");
             }
-            signal[currentIndex5].classList.add("active");
-            for (i = 0; i < sect9infoTxt.length; i++) {
-                sect9infoTxt[i].classList.remove("active");
+            obstacle[currentIndex6].classList.add("active");
+            for (i = 0; i < sect15infoTxt.length; i++) {
+                sect15infoTxt[i].classList.remove("active");
             }
-            sect9infoTxt[currentIndex5].classList.add("active");
-            signal[currentIndex5].currentTime = 0;
-            signal[currentIndex5].play();
-            updateHighlightLine5();
-        }
+            sect15infoTxt[currentIndex6].classList.add("active");
+            updateHighlightLine6();
+        });
     });
     
-    signal[1].addEventListener("timeupdate", function() {
-        if (signal[currentIndex5].ended) {
-            currentIndex5 = 0;
-            for (i = 0; i < menuItems5.length; i++) {
-                menuItems5[i].classList.remove("active");
-            }
-            menuItems5[currentIndex5].classList.add("active");
-            for (i = 0; i < signal.length; i++) {
-                signal[i].classList.remove("active");
-            }
-            signal[currentIndex5].classList.add("active");
-            for (i = 0; i < sect9infoTxt.length; i++) {
-                sect9infoTxt[i].classList.remove("active");
-            }
-            sect9infoTxt[currentIndex5].classList.add("active");
-            signal[currentIndex5].currentTime = 0;
-            signal[currentIndex5].play();
-            updateHighlightLine5();
+    function slider6Interval() {
+        if (currentIndex6 == 0) {
+            currentIndex6++;
         }
-    });*/
+        else if (currentIndex6 == 1) {
+            currentIndex6++;
+        }
+        else {
+            currentIndex6 = 0;
+        }
+        for (i = 0; i < menuItems6.length; i++) {
+            menuItems6[i].classList.remove("active");
+        }
+        menuItems6[currentIndex6].classList.add("active");
+        for (i = 0; i < obstacle.length; i++) {
+            obstacle[i].classList.remove("active");
+        }
+        obstacle[currentIndex6].classList.add("active");
+        for (i = 0; i < sect15infoTxt.length; i++) {
+            sect15infoTxt[i].classList.remove("active");
+        }
+        sect15infoTxt[currentIndex6].classList.add("active");
+        updateHighlightLine6();
+    }
+    
+    setInterval(slider6Interval, 5000);
 });
 
 window.addEventListener('scroll', function(){
@@ -719,7 +747,7 @@ window.addEventListener('scroll', function(){
             hdrRestartBtn.style.display = "block";
         });
     }
-
+    
     const mpstartb = document.getElementById("sect5imgstartback").getBoundingClientRect();
     const mpstart = document.getElementById("sect5imgstart");
     if (mpstartb.top <= 0) {
@@ -740,7 +768,7 @@ window.addEventListener('scroll', function(){
         blackmpvid.style.borderRadius = "10px";
         blackmpvid.style.opacity = 0;
     }
-
+    
     // -=- ... quality (4_1) -=-
     if (sect5onblackscroll1.getBoundingClientRect().top > (window.innerHeight || document.documentElement.clientHeight) - 140 && boolscroll4_1 == false) { //value < 4845 && boolscroll4_1 == false
         boolscroll4_1 = true;
@@ -777,7 +805,7 @@ window.addEventListener('scroll', function(){
         boolscroll5 = false;
         smartphoto[0].play();
     }
-
+    
     // -=- barriers quickshots video (6) -=-
     if (topBar2.getBoundingClientRect().top > 0 && boolscroll6 == false) { //value < 1785 && boolscroll6 == false
         boolscroll6 = true;
@@ -809,7 +837,7 @@ window.addEventListener('scroll', function(){
             sect8onblackscroll1.style.opacity = 1;
         }, 800);
     }
-
+    
     if (tracking[0].getBoundingClientRect().top >= (window.innerHeight || document.documentElement.clientHeight) && boolscroll7 == false) {
         boolscroll7 = true;
     }
@@ -833,7 +861,7 @@ window.addEventListener('scroll', function(){
         boolscroll9 = false;
         quickshots[0].play();
     }
-
+    
     // -=- barriers OcuSync2p0 video (10) -=-
     if (topBar3.getBoundingClientRect().top > 0 && boolscroll10 == false) { //value < 1785 && boolscroll10 == false
         boolscroll10 = true;
@@ -865,6 +893,21 @@ window.addEventListener('scroll', function(){
             sect12onblackscroll1.style.opacity = 1;
         }, 800);
     }
+    
+    // -=- apas drone play (11) -=-
+    const apasvid = document.getElementById("apasvid");
+    const apasRestartBtn = document.getElementById("apasRestartBtn");
+    if (apasvid.getBoundingClientRect().top >= (window.innerHeight || document.documentElement.clientHeight) && boolscroll11 == false) { //value < 3350 && boolscroll11 == false
+        boolscroll11 = true;
+        apasRestartBtn.style.display = "none";
+    }
+    if (apasvid.getBoundingClientRect().top < (window.innerHeight || document.documentElement.clientHeight) && boolscroll11 == true) { //value >= 3350 && boolscroll11 == true
+        boolscroll11 = false;
+        apasvid.play();
+        apasvid.addEventListener("ended", function() {
+            apasRestartBtn.style.display = "block";
+        });
+    }
 })
 
 function restartVid(x, y, z) {
@@ -874,5 +917,8 @@ function restartVid(x, y, z) {
     yRestartBtn.style.display = "none";
     if (z == 3) {
         boolscroll3 = true;
+    }
+    if (z == 11) {
+        boolscroll11 = true;
     }
 }

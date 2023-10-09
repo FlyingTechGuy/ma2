@@ -370,6 +370,20 @@ body {
     color: #ffffffa6;
 }
 
+@media screen and (max-width: 1180px) {
+    .sect3title {
+        font-size: 24px;
+    }
+    
+    .sect3subtitle {
+        font-size: 35px;
+    }
+
+    .qualityvidCont {
+        height: 1905px;
+    }
+}
+
 .sect4 {
     position: relative;
     width: 100%;
@@ -447,16 +461,20 @@ body {
 
     .sect4title {
         color: #000000a6;
-        font-size: 28px;
+        font-size: 22px;
         width: 90vw;
         margin-bottom: 10px;
     }
     
     .sect4subtitle {
         color: #000000d9;
-        font-size: 40px;
+        font-size: 30px;
         width: auto;
         margin-bottom: 20px;
+    }
+
+    .sect4textinfo {
+        font-size: 16px;
     }
 
     .sect4vidCont {
@@ -619,7 +637,7 @@ body {
     justify-content: center;
     align-items: center;
     padding-top: 100px;
-    /* margin-bottom: 100px; */
+    margin-bottom: 100px;
 }
 
 .sect6textCont {
@@ -780,20 +798,24 @@ body {
 
     .sect6title {
         color: #000000a6;
-        font-size: 28px;
+        font-size: 22px;
         width: 50vw;
         margin-bottom: 10px;
     }
     
     .sect6subtitle {
         color: #000000d9;
-        font-size: 40px;
+        font-size: 30px;
         width: auto;
         margin-bottom: 20px;
     }
 
     .sect6infoCont {
         width: 90%;
+    }
+    
+    .sect6textinfo {
+        font-size: 16px;
     }
 
     .sect6vidCont {
@@ -820,7 +842,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 200px;
+    padding-top: 100px;
     padding-bottom: 100px;
 }
 
@@ -875,16 +897,20 @@ body {
 
     .sect7title {
         color: #000000a6;
-        font-size: 28px;
+        font-size: 22px;
         width: 90vw;
         margin-bottom: 10px;
     }
     
     .sect7subtitle {
         color: #000000d9;
-        font-size: 40px;
+        font-size: 30px;
         width: auto;
         margin-bottom: 20px;
+    }
+
+    .sect7textinfo {
+        font-size: 16px;
     }
 }
 
@@ -1017,11 +1043,21 @@ body {
     transition: 0.5s;
     font-size: 1.5em;
     color: #ffffffa6;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 @media screen and (max-width: 1180px) {
     .quickshotsvidCont {
         height: 1200px;
+    }
+    
+    .sect8title {
+        font-size: 24px;
+    }
+    
+    .sect8subtitle {
+        font-size: 32px;
     }
 }
 
@@ -1034,7 +1070,7 @@ body {
     justify-content: center;
     align-items: center;
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 200px;
 }
 
 .sect9textCont {
@@ -1186,20 +1222,24 @@ body {
     
     .sect9title {
         color: #000000a6;
-        font-size: 28px;
+        font-size: 22px;
         width: 90vw;
         margin-bottom: 10px;
     }
     
     .sect9subtitle {
         color: #000000d9;
-        font-size: 40px;
+        font-size: 30px;
         width: auto;
         margin-bottom: 20px;
     }
     
     .sect9infoCont {
         width: 90%;
+    }
+
+    .sect9textinfo {
+        font-size: 16px;
     }
 
     .sect9vidCont {
@@ -1352,16 +1392,20 @@ body {
     
     .sect10title {
         color: #000000a6;
-        font-size: 28px;
+        font-size: 22px;
         width: 90vw;
         margin-bottom: 10px;
     }
     
     .sect10subtitle {
         color: #000000d9;
-        font-size: 40px;
+        font-size: 30px;
         width: auto;
         margin-bottom: 20px;
+    }
+
+    .sect10textinfo {
+        font-size: 16px;
     }
 
     .sect10vidCont {
@@ -1514,16 +1558,20 @@ body {
     
     .sect11title {
         color: #000000a6;
-        font-size: 28px;
+        font-size: 22px;
         width: 90vw;
         margin-bottom: 10px;
     }
     
     .sect11subtitle {
         color: #000000d9;
-        font-size: 40px;
+        font-size: 30px;
         width: auto;
         margin-bottom: 20px;
+    }
+
+    .sect11textinfo {
+        font-size: 16px;
     }
 
     .sect11vidCont {
@@ -1703,7 +1751,7 @@ body {
 .OcuSync2p0info {
     font-family: "titleBold";
     font-size: 24px;
-    line-height: 28px;
+    line-height: 1.2;
     letter-spacing: -.03em;
     margin-top: 8px;
     color: #00000073;
@@ -1716,6 +1764,18 @@ body {
 
     .OcuSync2p0infoCont {
         width: 90vw;
+    }
+    
+    .sect12title {
+        font-size: 24px;
+    }
+    
+    .sect12subtitle {
+        font-size: 35px;
+    }
+
+    .OcuSync2p0info {
+        font-size: 16px;
     }
 }
 
@@ -1772,11 +1832,14 @@ body {
 .sect13vidCont {
     width: 67%;
     max-width: 1140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .slider5 {
     position: relative;
-    width: 100%;
+    width: 90%;
     height: auto;
 }
 
@@ -1866,17 +1929,378 @@ body {
     .sect13textRow {
         width: 90%;
     }
+
+    .sect13title {
+        font-size: 22px;
+    }
     
     .sect13subtitle {
         width: auto;
         margin-bottom: 20px;
+        font-size: 30px;
     }
 
     .sect13textinfo {
         width: 100%;
+        font-size: 16px;
     }
 
     .sect13vidCont {
         width: 90%;
+    }
+}
+
+.sect14 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.sect14textCont {
+    width: auto;
+    font-family: "titleBold";
+    margin-bottom: 25px;
+}
+
+.sect14textSubcont {
+    display: flex;
+    width: 960px;
+    height: auto;
+}
+
+.sect14textRow {
+    width: 468px;
+    height: auto;
+}
+
+.sect14title {
+    color: #000000a6;
+    font-size: 28px;
+    width: 90%;
+    margin-bottom: 10px;
+    margin-right:10px;
+}
+
+.sect14subtitle {
+    color: #000000d9;
+    font-size: 40px;
+    width: 90%;
+}
+
+.sect14textinfo {
+    color: #00000073;
+    font-size: 22px;
+    width: 468px;
+    height: auto;
+}
+
+.sect14img {
+    max-width: 1000px;
+    width: 90%;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 1180px) {
+    .sect14textSubcont {
+        flex-direction: column;
+        width: 65vw;
+    }
+    
+    .sect14textRow {
+        width: 90%;
+    }
+
+    .sect14title {
+        font-size: 22px;
+    }
+    
+    .sect14subtitle {
+        width: auto;
+        margin-bottom: 20px;
+        font-size: 30px;
+    }
+
+    .sect14textinfo {
+        width: 100%;
+        font-size: 16px;
+    }
+}
+
+.sect15 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.sect15textCont {
+    width: auto;
+    font-family: "titleBold";
+    margin-bottom: 25px;
+}
+
+.sect15textSubcont {
+    display: flex;
+    width: 960px;
+    height: auto;
+}
+
+.sect15textRow {
+    width: 468px;
+    height: auto;
+}
+
+.sect15title {
+    color: #000000a6;
+    font-size: 28px;
+    width: 90%;
+    margin-bottom: 10px;
+    margin-right:10px;
+}
+
+.sect15subtitle {
+    color: #000000d9;
+    font-size: 40px;
+    width: 90%;
+}
+
+.sect15textinfo {
+    color: #00000073;
+    font-size: 23px;
+    width: 468px;
+    height: auto;
+}
+
+.sect15vidCont {
+    width: 67%;
+    max-width: 1140px;
+}
+
+.slider6 {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.obstaclebg {
+    position: relative;
+    width: 100%;
+    height: auto;
+    pointer-events: none;
+    border-radius: 10px;
+    z-index: -1;
+    opacity: 0;
+}
+
+.obstacle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    pointer-events: none;
+    border-radius: 10px;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.obstacle.active {
+    opacity: 1;
+}
+
+.lable-menu6 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 280px;
+}
+
+.menu-item6 {
+    color: #00000073;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    position: relative;
+    transition: 0.4s;
+}
+
+.menu-item6:hover {
+    color: #000;
+}
+
+.menu-item6.active {
+    color: #000;
+}
+
+.highlight-line6 {
+    height: 2px;
+    background-color: #000;
+    position: absolute;
+    margin-bottom: -40px;
+    z-index: 2;
+    left: 0;
+    width: 0;
+    transition: width 0.3s ease, transform 0.3s ease; /* Added transition properties */
+}
+
+.highlight-line-rail6 {
+    height: 1px;
+    background-color: #d8d8d8;
+    position: absolute;
+    margin-bottom: -41px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 280px;
+}
+
+.sect15infoCont {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.sect15infoTxtCont {
+    position: relative;
+    width: 770px;
+    line-height: 1.5;
+    margin: 0 10px;
+    margin-top: -25px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.sect15infoTxt {
+    position: absolute;
+    opacity: 0;
+    font-size: 12px;
+}
+
+.sect15infoTxt.active {
+    transition: 0.4s;
+    opacity: 1;
+}
+
+@media screen and (max-width: 1180px) {
+    .sect15textSubcont {
+        flex-direction: column;
+        width: 65vw;
+    }
+    
+    .sect15textRow {
+        width: 90%;
+    }
+
+    .sect15title {
+        font-size: 22px;
+    }
+    
+    .sect15subtitle {
+        width: auto;
+        margin-bottom: 20px;
+        font-size: 30px;
+    }
+    
+    .sect15textinfo {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .sect15vidCont {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .lable-menu6 {
+        width: 200px;
+        font-size: 12px;
+    }
+
+    .highlight-line-rail6 {
+        width: 200px;
+    }
+}
+
+.sect16 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-top: 250px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sect16imgCont {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.apasImg {
+    position: absolute;
+    max-width: 1160px;
+    width: 90%;
+    /* margin-top: -180px; */
+    margin-top: -12%;
+    z-index: -1;
+}
+
+.sect16vidCont {
+    max-width: 960px;
+    width: 90%;
+}
+
+#apasvid {
+    position: relative;
+    width: 100%;
+    height: auto;
+    pointer-events: none;
+    border-radius: 10px;
+}
+
+.sect16txtCont {
+    position: relative;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.5;
+    max-width: 693px;
+    width: 90%;
+    color: #00000073;
+}
+
+@media screen and (max-width: 600px) {
+    .sect16 {
+        margin-top: 150px;
+    }
+
+    .sect16txtCont {
+        line-height: 1.2;
     }
 }
