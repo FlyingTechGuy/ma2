@@ -660,15 +660,18 @@ window.addEventListener('scroll', function(){
     let value = window.scrollY;
     bghome.style.top = value * 0.5 + 'px';
     mounthome.style.top = value * 0.15 + 'px';
-    titlehome.style.top = value * 0.4 + 'px';
-    subtitlehome.style.top = value * 0.4 + 'px';
+    titlehome.style.top = value * 0.48 + 'px';
+    subtitlehome.style.top = value * 0.48 + 'px';
+    titlehome.style.opacity = 1-(value/100 * 0.1);
+    subtitlehome.style.opacity = 1-(value/100 * 0.1);
 
     // -=- opan drone play (1) -=-
     const openvid = document.getElementById("openvid");
-    if ((openvid.getBoundingClientRect().top < (window.innerHeight || document.documentElement.clientHeight) && boolscroll1 == false) || (openvid.getBoundingClientRect().bottom > 0 && boolscroll1 == true)) { //value < 100 && boolscroll1 == false
+    if ((openvid.getBoundingClientRect().top > (window.innerHeight || document.documentElement.clientHeight) && boolscroll1 == false)) { //value < 100 && boolscroll1 == false [ || (openvid.getBoundingClientRect().bottom > 0 && boolscroll1 == true)]
+        openvid.currentTime = 0;
         boolscroll1 = true;
     }
-    if ((openvid.getBoundingClientRect().top >= (window.innerHeight || document.documentElement.clientHeight) && boolscroll1 == true) || (openvid.getBoundingClientRect().bottom <= 0 && boolscroll1 == true)) { //value >= 100 && boolscroll1 == true
+    if ((openvid.getBoundingClientRect().top <= 500 && boolscroll1 == true)) { //value >= 100 && boolscroll1 == true [(window.innerHeight || document.documentElement.clientHeight) && boolscroll1 == true] -=|=- [ || (openvid.getBoundingClientRect().bottom >= 0 && boolscroll1 == true)]
         openvid.play();
         boolscroll1 = false;
     }
